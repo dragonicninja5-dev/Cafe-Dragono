@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap" rel="stylesheet">
+   <style>
+    .h {
+  font-family: "Uncial Antiqua", system-ui;
+  font-weight: bolder;
+  font-size: 200px;
+  font-style: normal;
+  color: rgb(52, 79, 102);
+}
+
+body{
+    background: rgb(23, 182, 183);
+}
+ 
+.p {
+  font-family: "Uncial Antiqua", system-ui;
+  font-weight: bolder;
+  font-size: 100px;
+  font-style: normal;
+  color: rgba(42, 39, 53, 0.884);
+}
+
+ .carousel-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 300px;}
+ 
+
+    
+    .myslides {
+      display: none;
+      max-height: 100%; 
+      max-width: 100%;
+    }
+
+</style> 
+</head>
+<body>
+   <div class="topnav" style="background-color:rgb(23, 182, 183);color:rgb(254, 225, 129);font-weight: bolder;font-size: xx-large;">
+    <a href="Index.html">Home|  </a>
+    <a href="">       </a>
+    <a href="main.html">Main Course | </a>
+    <a href="">       </a>
+    <a href="sweet.html">A Sweet Treat | </a>
+    <a href="">       </a>
+    <a href="drink.html">Drinks :</a>
+    <a href="">       </a>
+    <a href="gallery.html">Gallery </a>
+  </div> 
+  <h1 class="p">Gallery</h1> 
+ <div class="carousel-container">
+    <img class="myslides" src="blueberry-sour-cream-cake.jpg">
+    <img class="myslides" src="Burger.jpeg">
+    <img class="myslides" src="Cheese balls.jpeg">
+    <img class="myslides" src="Chiken wrap.jpeg">  
+    <img class="myslides" src="Chiken.jpeg">  
+    <img class="myslides" src="choc-chip-cookies-image1-197537-1.webp">
+    <img class="myslides" src="chocloate gautea.jpeg">
+    <img class="myslides" src="chocoholic-cold-brew-coffee-1-of-1-7-scaled.jpg">
+    <img class="myslides" src="cookies-and-cream-milkshake-made-with-oreo-cookies-in-the-Pampered-Chef-Deluxe-Cooking-Blender5-735x1103.jpg">
+    <img class="myslides" src="Cup-Of-Creamy-Coffee.png">
+    <img class="myslides" src="fries.jpeg">
+    <img class="myslides" src="homemade-ice-cream-sandwiches-recipe-tr.jpg">
+    <img class="myslides" src="no-bake-oreo-cheesecake-recipe-18.jpg">
+    <img class="myslides" src="nugget.jpeg">
+    <img class="myslides" src="rolls.jpeg">
+    <img class="myslides" src="smores-pizza-recipe-easy-summer-dessert-smores-pizza-1.jpg">
+    <img class="myslides" src="smores.jpg">
+    <img class="myslides" src="Submarine.jpeg">
+    <img class="myslides" src="tomato-mozzarella-pizza-FT-RECIPE0725-e7244e979c504188a049623668c15b2e.jpg">
+    </div>
+
+    <script>
+var index = 0;
+function carousel(){
+    var i;
+    var X = document.getElementsByClassName("myslides");
+
+    for(i=0; i<x.length; i++){''
+        x[i].style.display = "none";
+    }
+    index++;
+    if(index>x.length){
+        index=1;
+    }
+    x[index - 1].style.display ="block";
+    setTimeout(carousel, 4000)
+}
+    </script>
+</body>
+</html>
